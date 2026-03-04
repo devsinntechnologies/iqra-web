@@ -14,6 +14,7 @@ export default function Home() {
       {/* Side Dots Navigation */}
       <SideScrollNav />
       
+      
 <section id="hero" className="h-screen">
   <HeroSection />
 </section>
