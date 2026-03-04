@@ -21,7 +21,7 @@ const HeroSection = () => {
         {/* ===== LOGO SECTION ===== */}
         <div className="relative flex justify-center">
           {/* Glow Behind Logo (aapka wala same) */}
-          <div className="absolute w-44 h-44 bg-[#257796] rounded-full blur-3xl animate-glow" />
+          {/* <div className="absolute w-44 h-44 bg-[#257796] rounded-full blur-3xl animate-glow" /> */}
 
           {/* Logo + SHINE (same as header) */}
           <div className="relative animate-float">
