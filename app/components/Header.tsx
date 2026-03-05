@@ -15,7 +15,7 @@ export default function Header() {
           <div className="w-12 h-12 relative">
             <Image
               src="/logo.png"
-              alt="Iqra Quran Logo"
+              alt="IQRA QURAN Logo"
               fill
               className="object-contain"
               priority

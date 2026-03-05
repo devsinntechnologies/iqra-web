@@ -3,19 +3,19 @@ import React from "react";
 import Image from "next/image";
 
 const HeroSection = () => {
-  return (
-    <div className="relative min-h-screen flex justify-center pt-5 overflow-hidden">
+  return (<div className="relative h-auto md:h-screen flex md:justify-center justify-start pt-5 overflow-hidden bg-[#D7E8EE]">
+
       {/* ===== Background Image ===== */}
       <Image
         src="/background.png"
         alt="Background"
         fill
         priority
-        className="object-cover -z-10"
+       className="object-cover z-0"
       />
 
       {/* Optional soft overlay for better text visibility */}
-      <div className="absolute inset-0 bg-[#D7E8EE]/75 -z-10" />
+     <div className="absolute inset-0 bg-[#D7E8EE]/80 z-0" />
 
       <div className="relative z-10 text-center px-4 max-w-4xl">
         {/* ===== LOGO SECTION ===== */}
@@ -49,17 +49,18 @@ const HeroSection = () => {
         </div>
 
         {/* Main Heading */}
-        <h1
-          className="
-            text-[80px]
-            font-extrabold
-            bg-[linear-gradient(90deg,#1f4f5f_0%,#24677a_45%,#2f7f97_100%)]
-            bg-clip-text
-            text-transparent
-          "
-        >
-          Iqra Quran
-        </h1>
+ <h1
+  className="
+    text-[60px] sm:text-[80px]
+    leading-[1.2] sm:leading-[1.05]
+    font-extrabold
+    bg-[linear-gradient(90deg,#1f4f5f_0%,#24677a_45%,#2f7f97_100%)]
+    bg-clip-text
+    text-transparent
+  "
+>
+  IQRA <br className="sm:hidden" /> QURAN
+</h1>
 
         {/* Arabic Subtitle */}
         <p className="mt-0 text-2xl font-[500] text-[#237C9E]">اقرأ القرآن</p>
@@ -97,7 +98,7 @@ const HeroSection = () => {
           )}
         </div>
 
-        <p className="text-[10px] pt-5 tracking-[1px] uppercase text-[#4E8798] leading-relaxed">
+        <p className="text-[10px] pt-5 py-4 tracking-[1px] uppercase text-[#4E8798] leading-relaxed">
           Scroll to explore
         </p>
       </div>

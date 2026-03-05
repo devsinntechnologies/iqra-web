@@ -15,28 +15,28 @@ export default function Home() {
       <SideScrollNav />
       
       
-<section id="hero" className="h-screen">
+<section id="hero" >
   <HeroSection />
 </section>
 
 
-<section id="prayer" className="h-screen">
+<section id="prayer" >
   <PrayersTime />
 </section>
 
-<section id="recitation" className="h-screen">
+<section id="recitation" >
   <RecitationHub />
 </section>
 
-<section id="features" className="h-screen">
+<section id="features" >
   <IslamicFeatures />
 </section>
 
-<section id="action" className="h-screen">
+<section id="action" >
   <Action />
 </section>
 
-<section id="footer" className="h-screen">
+<section id="footer" >
   <Footer />
 </section>
     </div>
