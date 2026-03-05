@@ -18,19 +18,19 @@ export default function SideScrollNav() {
   // Active section detect karna
   useEffect(() => {
     const handleScroll = () => {
-      // const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-      // sections.forEach((id, index) => {
-      //   const element = document.getElementById(id);
-      //   if (element) {
-      //     if (
-      //       scrollPosition >= element.offsetTop &&
-      //       scrollPosition < element.offsetTop + element.offsetHeight
-      //     ) {
-      //       setActive(index);
-      //     }
-      //   }
-      // });
+      sections.forEach((id, index) => {
+        const element = document.getElementById(id);
+        if (element) {
+          if (
+            scrollPosition >= element.offsetTop &&
+            scrollPosition < element.offsetTop + element.offsetHeight
+          ) {
+            setActive(index);
+          }
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);

@@ -6,7 +6,7 @@ import { Clock, MapPin, Bell, Compass } from "lucide-react";
 
 export default function PrayersTime() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#D7E8EE] px-4 sm:px-8 md:px-16 lg:px-20">
+    <section className="relative h-auto md:h-screen flex items-center overflow-hidden bg-[#D7E8EE] px-4 sm:px-8 md:px-16 lg:px-20">
       
       {/* ===== Background Image ===== */}
       <Image
@@ -22,7 +22,7 @@ export default function PrayersTime() {
       <div className="absolute inset-0 bg-[#D7E8EE]/55 z-10" />
 
       {/* ===== Content Container ===== */}
-      <div className="relative z-20 grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full max-w-[1300px] mx-auto">
+      <div className="relative z-20 h-auto md:h-screen grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full  p-5 sm:p-8">
 
         {/* ===== LEFT CONTENT ===== */}
         <div className="w-full text-center md:text-left">

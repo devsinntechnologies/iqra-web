@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 const HeroSection = () => {
-  return (<div className="relative h-auto md:h-screen flex md:justify-center justify-start pt-5 overflow-hidden bg-[#D7E8EE]">
+  return (<div className="relative h-screen flex md:justify-center justify-start pt-5 overflow-hidden bg-[#D7E8EE]">
 
       {/* ===== Background Image ===== */}
       <Image
@@ -17,16 +17,16 @@ const HeroSection = () => {
       {/* Optional soft overlay for better text visibility */}
      <div className="absolute inset-0 bg-[#D7E8EE]/80 z-0" />
 
-      <div className="relative z-10 text-center px-4 max-w-4xl">
+      <div className="relative z-10 flex flex-col justify-center  text-center px-4 w-full md:space-y-7 space-y-4 ">
         {/* ===== LOGO SECTION ===== */}
-        <div className="relative flex justify-center">
+        {/* <div className="relative flex justify-center"> */}
           {/* Glow Behind Logo (aapka wala same) */}
           {/* <div className="absolute w-44 h-44 bg-[#257796] rounded-full blur-3xl animate-glow" /> */}
 
           {/* Logo + SHINE (same as header) */}
-          <div className="relative animate-float">
+          <div className="relative animate-float w-full items-center justify-center flex">
             {/* SHINE layers */}
-            <div
+            {/* <div
               className="pointer-events-none absolute -inset-8 rounded-full
               bg-[radial-gradient(circle_at_35%_30%,rgba(34,124,158,0.35)_0%,rgba(141,211,224,0.25)_35%,transparent_70%)]
               blur-[12px] opacity-100"
@@ -35,7 +35,7 @@ const HeroSection = () => {
               className="pointer-events-none absolute -inset-9 rounded-full
               bg-[radial-gradient(circle_at_55%_70%,rgba(255,255,255,0.85)_0%,transparent_60%)]
               blur-[9px] opacity-90"
-            />
+            /> */}
 
             <Image
               src="/logo.png"
@@ -46,10 +46,11 @@ const HeroSection = () => {
               priority
             />
           </div>
-        </div>
+        {/* </div> */}
 
         {/* Main Heading */}
- <h1
+<div>
+   <h1
   className="
     text-[60px] sm:text-[80px]
     leading-[1.2] sm:leading-[1.05]
@@ -61,9 +62,12 @@ const HeroSection = () => {
 >
   IQRA <br className="sm:hidden" /> QURAN
 </h1>
+</div>
 
         {/* Arabic Subtitle */}
-        <p className="mt-0 text-2xl font-[500] text-[#237C9E]">اقرأ القرآن</p>
+       <div>
+         <p className="mt-0 text-2xl font-[500] text-[#237C9E]">اقرأ القرآن</p>
+       </div>
 
         {/* Divider */}
         <div className="flex items-center justify-center gap-3 my-6">
@@ -79,10 +83,12 @@ const HeroSection = () => {
         </div>
 
         {/* Tagline */}
-        <p className="text-sm tracking-[1px] uppercase text-[#4E8798] leading-relaxed">
+     <div>
+         <p className="text-sm tracking-[1px] uppercase text-[#4E8798] leading-relaxed">
           YOUR MODERN COMPANION FOR QURAN, PRAYER & <br />
           ISLAMIC KNOWLEDGE
         </p>
+     </div>
 
         {/* Buttons */}
         <div className="mt-7 flex flex-wrap justify-center gap-6">
@@ -98,9 +104,11 @@ const HeroSection = () => {
           )}
         </div>
 
-        <p className="text-[10px] pt-5 py-4 tracking-[1px] uppercase text-[#4E8798] leading-relaxed">
+      <div>
+          <p className="text-[10px] pt-5 py-4 tracking-[1px] uppercase text-[#4E8798] leading-relaxed">
           Scroll to explore
         </p>
+      </div>
       </div>
     </div>
   );

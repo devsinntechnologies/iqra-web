@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Action() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center bg-[#D7E8EE] px-5 sm:px-8 md:px-12 lg:pl-[70px] lg:pr-[60px] py-12 md:py-16 lg:py-[80px] overflow-hidden">
+    <section className="relative w-full h-auto md:h-screen flex items-center justify-center bg-[#D7E8EE] px-5 sm:px-8 md:px-12 lg:pl-[70px] lg:pr-[60px] py-12 md:py-16 lg:py-[80px] overflow-hidden">
       {/* BACKGROUND IMAGE */}
       <Image
         src="/background.png"
@@ -20,7 +20,7 @@ export default function Action() {
       <div className="absolute inset-0 bg-[#D7E8EE]/55 z-10" />
 
       {/* MAIN CONTENT */}
-      <div className="relative z-20 w-full max-w-[1400px] flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-6">
+      <div className="relative z-20 w-full h-auto md:h-screen max-w-[1400px] flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-6">
         {/* LEFT SIDE */}
         <div className="w-full lg:w-[650px]">
           {/* APP DEMO LABEL */}

@@ -32,7 +32,7 @@ const stats = [
 
 export default function IslamicFeatures() {
   return (
-    <section className="relative h-screen  w-full  bg-[#D7E8EE] py-0">
+    <section className="relative h-auto md:h-screen  w-full  bg-[#D7E8EE] ">
 
       {/* Background */}
       <div className="absolute inset-0 z-0">
@@ -48,7 +48,7 @@ export default function IslamicFeatures() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1200px] mx-auto px-0 sm:px-8">
+      <div className="relative z-10 w-full h-auto md:h-screen flex flex-col justify-center md:p-7 p-4">
 
         {/* Top Text */}
         <div className="flex items-center justify-center mb-0 gap-3">
@@ -96,7 +96,7 @@ export default function IslamicFeatures() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:flex md:justify-center  gap-10 mt-2 text-center">
+        <div className="grid grid-cols-2 md:flex md:justify-center  gap-10 mt-5 text-center">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <h4 className="text-xl md:text-2xl font-bold text-[#227C9E]">
