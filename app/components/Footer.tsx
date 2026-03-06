@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Play } from "lucide-react";
+import Link from "next/link";
+import {  Play } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -65,8 +66,11 @@ export default function Footer() {
           </p>
 
           {/* Google Play Button */}
-          <div className="mt-20 sm:mt-5">
-            <a className="w-[170px] sm:w-[185px] h-[48px] sm:h-[52px] bg-white rounded-[12px] border border-[#cfe3ea] shadow-sm flex items-center justify-center gap-2 text-[#123e48] font-semibold text-[13px] sm:text-[14px] transition-all duration-300 hover:scale-110 hover:bg-[#e6f5f9]">
+           <div className="mt-20 sm:mt-5">
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.devsinntechnologies.iqraquran"
+              className="w-[170px] sm:w-[185px] h-[48px] sm:h-[52px] bg-white rounded-[12px] border border-[#cfe3ea] shadow-sm flex items-center justify-center gap-2 text-[#123e48] font-semibold text-[13px] sm:text-[14px] transition-all duration-300 hover:scale-110 hover:bg-[#e6f5f9]"
+            >
               <Play size={18} />
               <div className="text-left leading-tight">
                 <div className="text-[9px] sm:text-[10px] text-[#5b8a96] font-medium">
@@ -74,7 +78,7 @@ export default function Footer() {
                 </div>
                 <div>Google Play</div>
               </div>
-            </a>
+          </Link>
           </div>
         </div>
 
