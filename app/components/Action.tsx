@@ -154,7 +154,16 @@ export default function Action() {
       muted
       playsInline
       controls
-      className="absolute top-[8.5%] right-49 w-[70%] h-[83%] object-cover rounded-[25px] z-40"
+      className="
+      absolute 
+      top-[8.5%] 
+      left-[15%] 
+      w-[70%] 
+      h-[83%] 
+      object-cover 
+      rounded-[20px] 
+      z-40
+      "
       onEnded={handleVideoEnd}
     >
       <source
@@ -167,9 +176,16 @@ export default function Action() {
   {/* MOBILE FRAME */}
   <motion.img
     src="/mob4.png"
-    className=" w-full h-[450px] right-40 relative z-0 pointer-events-none"
-    // animate={{ y: [0, -15, 0] }}
-    // transition={{ duration: 4, repeat: Infinity }}
+    className="
+    w-[170px]
+    sm:w-[200px]
+    md:w-[220px]
+    lg:w-[240px]
+    h-auto
+    relative
+    z-30
+    pointer-events-none
+    "
   />
 
 </div>
