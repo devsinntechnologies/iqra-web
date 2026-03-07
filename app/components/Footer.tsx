@@ -126,7 +126,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Text */}
-        <div className="text-center mt-4 sm:mt-2">
+        <div className="text-center mt-4 sm:mt-0">
           <div className="text-[14px] sm:text-[15px] md:text-[16px] text-[#2f8aa3]">
             بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
           </div>

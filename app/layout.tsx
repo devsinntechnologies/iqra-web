@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -16,7 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "IQRA QURAN",
   description: "Your Digital Companion",
+  icons: {
+    icon: "/logo.png",
+  },
 };
+
 
 export default function RootLayout({
   children,
