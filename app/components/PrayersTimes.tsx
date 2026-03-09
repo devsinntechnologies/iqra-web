@@ -6,7 +6,7 @@ import { Clock, MapPin, Bell, Compass } from "lucide-react";
 
 export default function PrayersTime() {
   return (
-    <section className="relative h-auto md:h-screen flex items-center overflow-hidden bg-[#D7E8EE] px-4 sm:px-8 md:px-16 lg:px-20">
+    <section className="relative h-auto md:h-screen min-[2000px]:h-screen flex items-center overflow-hidden bg-[#D7E8EE] px-4 sm:px-8 md:px-16 lg:px-20 min-[2000px]:py-0">
       
       {/* ===== Background Image ===== */}
       <Image
@@ -22,7 +22,7 @@ export default function PrayersTime() {
       <div className="absolute inset-0 bg-[#D7E8EE]/55 z-10" />
 
       {/* ===== Content Container ===== */}
-      <div className="relative z-20 h-auto md:h-screen grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full  p-5 sm:p-8">
+      <div className="relative z-20 h-auto md:h-screen min-[2000px]:h-screen grid md:grid-cols-2 gap-8 md:gap-12 min-[2000px]:gap-10 items-center w-full p-0 sm:p-8 min-[2000px]:py-6">
 
         {/* ===== LEFT CONTENT ===== */}
         <div className="w-full text-center md:text-left">
@@ -36,20 +36,20 @@ export default function PrayersTime() {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f4e5f] leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl min-[2000px]:text-5xl font-bold text-[#1f4e5f] leading-tight">
             Prayer Times &{" "}
             <span className="text-[#227C9E]">Daily Schedule</span>
           </h2>
 
           {/* Paragraph */}
-          <p className="mt-4 md:mt-6 text-[#4a6c78] text-xs sm:text-sm md:text-base leading-relaxed max-w-[520px] mx-auto md:mx-0">
+          <p className="mt-4 md:mt-6 text-[#4a6c78] text-xs sm:text-sm md:text-base min-[2000px]:text-base leading-relaxed max-w-[520px] mx-auto md:mx-0">
             Never miss a prayer with our intelligent prayer time system.
             Precise calculations based on your location with support for
             multiple Islamic calculation methods.
           </p>
 
           {/* Features */}
-          <div className="mt-6 md:mt-10 space-y-4 md:space-y-6">
+          <div className="mt-6 md:mt-10 min-[2000px]:mt-8 space-y-4 md:space-y-6 min-[2000px]:space-y-5">
 
             {[
               {
@@ -111,7 +111,7 @@ export default function PrayersTime() {
             width={260}
             height={900}
             priority
-            className="w-[150px] sm:w-[190px] md:w-[220px] lg:w-[260px] h-auto drop-shadow-2xl"
+            className="w-[150px] sm:w-[190px] md:w-[220px] lg:w-[260px] min-[2000px]:w-[300px] h-auto drop-shadow-2xl"
           />
         </motion.div>
 
