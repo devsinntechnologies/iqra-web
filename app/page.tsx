@@ -6,6 +6,7 @@ import Action from "./components/Action";
 import Footer from "./components/Footer";
 import SideScrollNav from "./components/SideScrollNav";
 import Header from "./components/Header";
+import PrivacyPolicy from "./privacy-policy/page";
 
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
 <section id="footer" >
   <Footer />
 </section>
+{/* <section id="privicy">
+ <PrivacyPolicy/>
+</section> */}
     </div>
   );
 }

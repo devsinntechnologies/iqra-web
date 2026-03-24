@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {  Play } from "lucide-react";
+// import {  Play } from "lucide-react";
+import { Linkedin, Youtube, Instagram, Play } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -82,7 +83,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* TESTIMONIAL CARDS */}
+        {/* TESTIMONIAL CARDS
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-5 md:gap-6 mt-12 sm:mt-4 w-full items-center justify-center">
           {[
             {
@@ -123,6 +124,53 @@ export default function Footer() {
               </div>
             </div>
           ))}
+        </div> */}
+          <div className="w-full mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-left px-2 sm:px-4">
+          
+          {/* QUICK LINKS */}
+          <div>
+            <h3 className="text-sm font-semibold text-[#7a8f95] mb-4 uppercase tracking-wide">
+              Quick Links
+            </h3>
+            <ul className="space-y-3 text-[#3e555c] text-[15px]">
+              <li><Link href="#">Home</Link></li>
+              <li><Link href="/featuers">Features</Link></li>
+              <li><Link href="/learnquran">Learn Quran</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+            </ul>
+          </div>
+
+          {/* LEGAL */}
+          <div>
+            <h3 className="text-sm font-semibold text-[#7a8f95] mb-4 uppercase tracking-wide">
+              Legal
+            </h3>
+            <ul className="space-y-3 text-[#3e555c] text-[15px]">
+              <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link href="/term">Terms & Conditions</Link></li>
+            </ul>
+          </div>
+
+          {/* CONNECT */}
+          <div>
+            <h3 className="text-sm font-semibold text-[#7a8f95] mb-4 uppercase tracking-wide">
+              Connect
+            </h3>
+
+            <div className="flex items-center gap-4">
+              <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
+                <Linkedin className="text-[#0A66C2]" size={18} />
+              </Link>
+
+              <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
+                <Instagram className="text-[#E1306C]" size={18} />
+              </Link>
+
+              <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
+                <Youtube className="text-[#FF0000]" size={18} />
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* Footer Text */}
