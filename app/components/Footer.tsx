@@ -159,7 +159,8 @@ export default function Footer() {
             </h3>
 
             <div className="flex items-center gap-4">
-              <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
+              <Link href="https://www.linkedin.com/in/the-iqra-quran-66096b3b1/"
+              target="_blank" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
                 <Linkedin className="text-[#0A66C2]" size={18} />
               </Link>
 
