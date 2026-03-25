@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* LEFT SIDE: Logo + Text */}
-        <div className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4">
           {/* Logo */}
           <div className="w-12 h-12 relative">
             <Image
@@ -33,7 +33,7 @@ export default function Header() {
               Your Digital Companion
             </p>
           </div>
-        </div>
+        </Link>
 
 
     <div className="flex">
@@ -96,12 +96,15 @@ export default function Header() {
           {/* Download Button */}
           <Link
             href="https://play.google.com/store/apps/details?id=com.devsinntechnologies.iqraquran"
-            className="px-4 py-2 rounded-full border border-[#2F84A4] text-[#2f6f8f] bg-[#E0EDF1] font-medium tracking-widest text-xs hover:bg-[#2f6f8f] hover:text-white transition-all duration-300"
+            target="_blank"
+            className="px-5 py-3 rounded-full border bg-[#2f6f8f] text-[#DCEAEE] font-medium tracking-widest text-xs hover:bg-[#DCEAEE] hover:text-black transition-all duration-300 flex items-center justify-center gap-2"
           >
+            <Image src="/play.png" alt="Play store" width={16} height={16} className="object-contain" />
             Download the App
           </Link>
         </nav>
       </div>
-    </header>
+    </header> 
+    // bg-[#2f6f8f]
   );
 }

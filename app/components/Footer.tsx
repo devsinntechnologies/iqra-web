@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           
           {/* Logo */}
-          <div className="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px] mb-2 flex items-center justify-center">
+          <Link href="/" className="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px] mb-2 flex items-center justify-center">
             
             <div className="pointer-events-none absolute -inset-6 z-0 rounded-full blur-[16px] opacity-100
               bg-[radial-gradient(circle,transparent_38%,rgba(34,124,158,0.45)_55%,rgba(141,211,224,0.25)_70%,transparent_82%)]"
@@ -48,7 +48,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </div>
-          </div>
+          </Link>
 
           {/* Heading */}
           <h1 className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[1.2] font-extrabold max-w-[900px]">
@@ -70,9 +70,10 @@ export default function Footer() {
            <div className="mt-20 sm:mt-5">
             <Link
               href="https://play.google.com/store/apps/details?id=com.devsinntechnologies.iqraquran"
+              target="_blank"
               className="w-[170px] sm:w-[185px] h-[48px] sm:h-[52px] bg-white rounded-[12px] border border-[#cfe3ea] shadow-sm flex items-center justify-center gap-2 text-[#123e48] font-semibold text-[13px] sm:text-[14px] transition-all duration-300 hover:scale-110 hover:bg-[#e6f5f9]"
             >
-              <Play size={18} />
+              <Image src="/play.png" alt="Play Store" width={25} height={25} className="object-contain" />
               <div className="text-left leading-tight">
                 <div className="text-[9px] sm:text-[10px] text-[#5b8a96] font-medium">
                   Get it on
@@ -162,11 +163,16 @@ export default function Footer() {
                 <Linkedin className="text-[#0A66C2]" size={18} />
               </Link>
 
-              <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
+              <Link href="https://www.instagram.com/theiqraquranofficial/"
+              target="_blank" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
                 <Instagram className="text-[#E1306C]" size={18} />
               </Link>
 
-              <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
+              <Link href="https://youtube.com/@theiqraquranofficial?si=tJYP1fk72vybm4S0
+youtube.com
+
+"
+target="_blank" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110 transition">
                 <Youtube className="text-[#FF0000]" size={18} />
               </Link>
             </div>

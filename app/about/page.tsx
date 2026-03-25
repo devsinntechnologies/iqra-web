@@ -31,10 +31,10 @@ export default function AboutPage() {
 
         {/* Quran Inspiration */}
         <div className="bg-[#2F6F8F] rounded-2xl p-6 mb-8 text-center">
-          <p className="italic text-lg md:text-xl text-[black]">
+          <p className="italic text-lg md:text-xl text-[white]">
             “And We have certainly made the Quran easy for remembrance, so is there any who will remember?”
           </p>
-          <p className="mt-2 text-sm text-gray-900">
+          <p className="mt-2 text-sm text-[white]">
             — Surah Al-Qamar (54:17)
           </p>
         </div>

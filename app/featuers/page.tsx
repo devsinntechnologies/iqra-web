@@ -10,8 +10,8 @@ const features = [
     details:
       "Islam360 offers the most comprehensive Quran reading experience with features like tafseer from renowned Islamic scholars, translations in multiple languages, and more.",
     extra: "Search for chapters and verses in the Holy Quran in a single tap.",
-    buttonText: "Learn More",
-    buttonLink: "/learn-quran",
+    buttonText: "Download Now",
+    buttonLink: "https://play.google.com/store/apps/details?id=com.devsinntechnologies.iqraquran",
   },
   {
     title: "Hadith",
@@ -62,34 +62,32 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-[#D9E7EB] py-16">
-      <div className="max-w-7xl mx-auto px-4 space-y-16">
+    <section className="bg-[#D9E7EB] py-0 min-h-screen overflow-y-scroll scroll-snap-y-mandatory">
+      <div className="max-w-7xl mx-auto px-4">
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center gap-8 ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            }`}
+            className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen scroll-snap-align-start py-16"
           >
             {/* Image */}
             <div className="flex-1 flex justify-center">
               <Image
                 src="/mob4.png"
                 alt={feature.title}
-                width={180}
-                height={360}
-                className="w-44 h-auto object-contain"
+                width={300}
+                height={600}
+                className="w-64 h-auto object-contain"
               />
             </div>
 
             {/* Text */}
-            <div className="flex-1 space-y-4">
-              <h2 className="text-3xl font-bold text-gray-900">{feature.title}</h2>
-              <p className="text-lg font-medium text-gray-700">{feature.description}</p>
-              <p className="text-gray-600">{feature.details}</p>
-              <p className="text-gray-600 italic">{feature.extra}</p>
-              <Link href={feature.buttonLink}>
-                <button className="mt-4 px-6 py-3 bg-[#227C9E] text-white rounded-lg hover:bg-[#2F6F8k] transition">
+            <div className="flex-1 space-y-4 text-center md:text-left">
+              <h2 className="text-4xl font-bold text-gray-900">{feature.title}</h2>
+              <p className="text-xl font-medium text-gray-700">{feature.description}</p>
+              <p className="text-lg text-gray-600">{feature.details}</p>
+              <p className="text-lg text-gray-600 italic">{feature.extra}</p>
+              <Link href={feature.buttonLink} target="_blank">
+                <button className="mt-6 px-8 py-4 bg-[#227C9E] text-white rounded-lg hover:bg-[#2F6F8F] transition text-lg">
                   {feature.buttonText}
                 </button>
               </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   Clock,
   BookOpen,
@@ -66,9 +67,9 @@ export default function IslamicFeatures() {
 
         {/* Logo */}
         <div className="flex justify-center my-6">
-          <div className="relative w-12 h-12 md:w-14 md:h-14">
+          <Link href="/" className="relative w-12 h-12 md:w-14 md:h-14">
             <Image src="/logo.png" alt="logo" fill className="object-contain" />
-          </div>
+          </Link>
         </div>
 
         {/* Cards */}

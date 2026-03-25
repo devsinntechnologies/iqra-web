@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -29,14 +30,16 @@ const HeroSection = () => {
           {/* SHINE layers */}
           {/* <div className="pointer-events-none absolute -inset-8 rounded-full bg-[radial-gradient(circle_at_35%_30%,rgba(34,124,158,0.35)_0%,rgba(141,211,224,0.25)_35%,transparent_70%)] blur-[12px] opacity-100" /> */}
           {/* <div className="pointer-events-none absolute -inset-9 rounded-full bg-[radial-gradient(circle_at_55%_70%,rgba(255,255,255,0.85)_0%,transparent_60%)] blur-[9px] opacity-90" /> */}
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={130}
-            height={130}
-            className="object-contain relative z-10"
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={130}
+              height={130}
+              className="object-contain relative z-10"
+              priority
+            />
+          </Link>
         </div>
         {/* </div> */}
 

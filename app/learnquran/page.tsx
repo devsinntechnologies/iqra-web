@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   BookOpen,
@@ -34,7 +35,7 @@ const features = [
 
 export default function LearnQuranPage() {
   return (
-    <section className="min-h-screen bg-[#DCEAEE] px-6 md:px-12 lg:px-20 py-12">
+    <section className="min-h-screen bg-[#DCEAEE] px-6 md:px-12 lg:px-20 py-22">
 
       {/* HERO */}
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
@@ -58,13 +59,18 @@ export default function LearnQuranPage() {
           </p>
 
           <div className="mt-8 flex gap-4">
-            <button className="px-6 py-3 bg-teal-700 text-white rounded-xl shadow-md hover:bg-teal-800 transition">
-              Start Learning
-            </button>
+            
+            <Link href="https://play.google.com/store/apps/details?id=com.devsinntechnologies.iqraquran" target="_blank">
+              <button className="px-6 py-3 bg-teal-700 text-white rounded-xl shadow-md hover:bg-teal-800 transition">
+                Start Learning
+              </button>
+            </Link>
 
-            <button className="px-6 py-3 bg-white text-gray-700 rounded-xl shadow hover:shadow-md transition">
-              Explore
-            </button>
+            <Link href="https://play.google.com/store/apps/details?id=com.devsinntechnologies.iqraquran" target="_blank">
+              <button className="px-6 py-3 bg-white text-gray-700 rounded-xl shadow hover:shadow-md transition">
+                Explore
+              </button>
+            </Link>
           </div>
         </motion.div>
 
@@ -137,9 +143,9 @@ export default function LearnQuranPage() {
                   Structured lessons to help you master Quran reading.
                 </p>
 
-                <button className="mt-4 text-teal-700 font-medium">
+                {/* <button className="mt-4 text-teal-700 font-medium">
                   Start →
-                </button>
+                </button> */}
               </motion.div>
             )
           )}

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header"; // 👈 ADD THIS
+import Footer from "@/app/components/Footer"; // 👈 ADD THIS
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         <Header />   {/* 👈 HEADER YAHAN ADD KIYA */}
         {children}
+        <Footer />   {/* 👈 FOOTER YAHAN ADD KIYA */}
       </body>
     </html>
   );
