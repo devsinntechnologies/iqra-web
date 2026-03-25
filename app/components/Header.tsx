@@ -35,9 +35,9 @@ export default function Header() {
           </div>
         </div>
 
-        {/* RIGHT SIDE NAVIGATION */}
-        <nav className="flex items-center gap-4 md:gap-6">
-          {/* Learn Quran Button */}
+
+    <div className="flex">
+         <div className="flex justify-center items-center">         {/* Learn Quran Button */}
           <Link
             href="featuers"
             className="px-3 py-2  text-[#2f6f8f] cursor-pointer hover:underline"
@@ -50,7 +50,8 @@ export default function Header() {
           >
             Learn Quran 
           </Link>
-
+</div>
+ 
           {/* Company Dropdown */}
           <div className="relative">
             <button
@@ -87,6 +88,10 @@ export default function Header() {
               </div>
             )}
           </div>
+    </div>
+        {/* RIGHT SIDE NAVIGATION */}
+        <nav className="flex justify-center  items-center gap-4 md:gap-6">
+   
 
           {/* Download Button */}
           <Link

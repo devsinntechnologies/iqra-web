@@ -89,7 +89,7 @@ export default function FeaturesSection() {
               <p className="text-gray-600">{feature.details}</p>
               <p className="text-gray-600 italic">{feature.extra}</p>
               <Link href={feature.buttonLink}>
-                <button className="mt-4 px-6 py-3 bg-[#227C9E] text-black rounded-lg hover:bg-[#2F6F8k] transition">
+                <button className="mt-4 px-6 py-3 bg-[#227C9E] text-white rounded-lg hover:bg-[#2F6F8k] transition">
                   {feature.buttonText}
                 </button>
               </Link>

@@ -55,7 +55,7 @@ export default function TermsPage() {
 
         <Section
           title="8. Contact Us"
-          text="If you have any questions about these Terms, please contact us at support@iqranapp.com"
+          text="If you have any questions about these Terms, please contact us at support@iqraapp.com"
         />
 
         {/* Footer */}
