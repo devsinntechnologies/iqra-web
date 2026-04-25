@@ -8,7 +8,7 @@ export default function AboutPage() {
       
       <div className="max-w-5xl w-full bg-[#DCEAEE]  rounded-3xl shadow-lg p-8 md:p-12">
 
-        {/* Heading */}
+        {/* Headin */}
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-6">
           About Iqran Quran App
         </h1>
