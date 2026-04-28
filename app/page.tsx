@@ -3,9 +3,9 @@ import PrayersTime from "@/app/components/PrayersTimes";
 import RecitationHub from "./components/RecitationHub";
 import IslamicFeatures from "./components/IslamicFeatures";
 import Action from "./components/Action";
-import Footer from "./components/Footer";
+
 import SideScrollNav from "./components/SideScrollNav";
-import Header from "./components/Header";
+
 import PrivacyPolicy from "./privacy-policy/page";
 
 export default function Home() {
@@ -37,9 +37,7 @@ export default function Home() {
   <Action />
 </section>
 
-<section id="footer" >
-  <Footer />
-</section>
+
 {/* <section id="privicy">
  <PrivacyPolicy/>
 </section> */}

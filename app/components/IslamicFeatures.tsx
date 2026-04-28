@@ -33,7 +33,7 @@ const stats = [
 
 export default function IslamicFeatures() {
   return (
-    <section className="relative h-screen  w-full  bg-[#D7E8EE] py-0">
+    <section className="relative h-svh w-full bg-[#D7E8EE] flex items-center">
 
       {/* Background */}
       <div className="absolute inset-0 z-0">
@@ -49,46 +49,46 @@ export default function IslamicFeatures() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1200px] mx-auto px-0 sm:px-8">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 sm:px-8">
 
         {/* Top Text */}
         <div className="flex items-center justify-center mb-0 gap-3">
           <span className="h-[1px] w-16 bg-[#2c6e8f] hidden md:block" />
-          <p className="text-[9px] md:text-[10px] tracking-[4px] py-3 text-[#2c6e8f] font-semibold">
+          <p className="text-[9px] md:text-[10px] tracking-[4px] py-2 text-[#2c6e8f] font-semibold">
             EVERYTHING YOU NEED
           </p>
           <span className="h-[1px] w-16 bg-[#2c6e8f] hidden md:block" />
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[#103b4a] mb-4">
+        <h2 className="text-center text-xl sm:text-3xl md:text-4xl font-bold text-[#103b4a] mb-2 md:mb-4">
           Complete <span className="text-[#2c6e8f]">Islamic Features</span>
         </h2>
 
         {/* Logo */}
-        <div className="flex justify-center my-6">
-          <Link href="/" className="relative w-12 h-12 md:w-14 md:h-14">
+        <div className="flex justify-center my-2 md:my-4">
+          <Link href="/" className="relative w-10 h-10 md:w-14 md:h-14">
             <Image src="/logo.png" alt="logo" fill className="object-contain" />
           </Link>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6 max-w-5xl mx-auto">
           {features.map((card, idx) => {
             const Icon = card.icon;
             return (
               <div
                 key={idx}
-                className="bg-white/70 backdrop-blur-md p-4 rounded-2xl shadow-sm  hover:shadow-xl hover:scale-110 hover:bg-[#d8edf4] 
+                className="bg-white/70 backdrop-blur-md p-2 sm:p-4 rounded-2xl shadow-sm hover:shadow-xl hover:scale-110 hover:bg-[#d8edf4]
   transition-all duration-300 flex flex-col items-center text-center"
               >
-                <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-xl  bg-[#e3f1f7] mb-3">
-                  <Icon className="text-[#2c6e8f] w-[20px] h-[20px] md:w-[22px] md:h-[22px]" />
+                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center rounded-xl bg-[#e3f1f7] mb-2 md:mb-3">
+                  <Icon className="text-[#2c6e8f] w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] md:w-[22px] md:h-[22px]" />
                 </div>
-                <h3 className="font-medium text-[#103b4a] mb-1 text-sm md:text-base">
+                <h3 className="font-medium text-[#103b4a] mb-1 text-xs md:text-base">
                   {card.title}
                 </h3>
-                <p className="text-[11px] md:text-xs text-[#709EAE]">
+                <p className="text-[10px] md:text-xs text-[#709EAE]">
                   {card.desc}
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function IslamicFeatures() {
           })}
         </div>
 
-        <div className="grid grid-cols-2 md:flex md:justify-center  gap-10 mt-2 text-center">
+        <div className="grid grid-cols-2 md:flex md:justify-center gap-6 sm:gap-10 mt-3 md:mt-4 text-center">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <h4 className="text-xl md:text-2xl font-bold text-[#227C9E]">
